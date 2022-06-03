@@ -1,0 +1,11 @@
+$colors: (
+  "main-text": #121212,
+  "second-text": #ffffff,
+  "main-bg": #ffffff,
+  "second-bg": #e4c1ae,
+  "backdrop-bg": rgba(18, 18, 18, 0.5),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
