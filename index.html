@@ -67,14 +67,26 @@
             and protection for modern and legacy infrastructures and SaaS
             platforms, managed via a single app with no hardware required.
           </p>
-          <button class="button" type="button" data-button-open>Button</button>
+          <button
+            class="button"
+            type="button"
+            data-button-open
+            aria-label="open modal window"
+          >
+            Button
+          </button>
         </div>
       </article>
     </div>
 
     <div class="backdrop is-hidden" data-backdrop>
-      <div class="modal">
-        <button class="modal__button" type="button" data-button-close>
+      <div class="modal" role="dialog">
+        <button
+          class="modal__button"
+          type="button"
+          data-button-close
+          aria-label="close modal window"
+        >
           <svg class="modal__icon">
             <use href="./icons/sprite.svg#icon-cross"></use>
           </svg>
@@ -83,7 +95,8 @@
         <div class="alert">
           <h2 class="alert__title">Alert!</h2>
           <p class="alert__text">
-            You have clicked <span class="alert__value">X times</span> to
+            You have clicked
+            <span class="alert__value" aria-live="polite">X times</span> to
             related button.
           </p>
         </div>
