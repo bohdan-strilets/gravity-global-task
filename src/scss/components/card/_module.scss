@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+}
+
+.image {
+  margin-right: 95px;
+}
+
+.wrapper {
+  width: 380px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+
+  color: getColor("main-text");
+
+  margin-bottom: 24px;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: getColor("main-text");
+
+  margin-bottom: 32px;
+}

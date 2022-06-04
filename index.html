@@ -25,14 +25,26 @@
   </head>
   <body>
     <div class="container">
-      <article>
-        <img
-          src="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_480.jpg"
-          alt="Sunset on the seashore"
-        />
-        <div>
-          <h2>Lorem Ipsum</h2>
-          <p>
+      <article class="card">
+        <picture class="image">
+          <source
+            srcset="
+              ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg  538w,
+              ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1002.jpg                      1002w                 1400w
+            "
+            media="(min-width: 1440px)"
+            type="image/jpg"
+            sizes="(min-width: 1440px) 505px"
+          />
+          <img
+            src="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg"
+            alt="Sunset on the seashore"
+          />
+        </picture>
+
+        <div class="wrapper">
+          <h1 class="title">Lorem Ipsum</h1>
+          <p class="description">
             Infinitely scalable, feature-rich and cloud-native data management
             and protection for modern and legacy infrastructures and SaaS
             platforms, managed via a single app with no hardware required.
