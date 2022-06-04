@@ -26,11 +26,11 @@
   <body>
     <div class="container">
       <article class="card">
-        <picture class="image">
+        <picture class="card__image">
           <source
             srcset="
               ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg  538w,
-              ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1002.jpg                      1002w                 1400w
+              ./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1002.jpg                      1002w
             "
             media="(min-width: 1440px)"
             type="image/jpg"
@@ -42,16 +42,35 @@
           />
         </picture>
 
-        <div class="wrapper">
-          <h1 class="title">Lorem Ipsum</h1>
-          <p class="description">
+        <div class="card__wrapper">
+          <h1 class="card__title">Lorem Ipsum</h1>
+          <p class="card__description">
             Infinitely scalable, feature-rich and cloud-native data management
             and protection for modern and legacy infrastructures and SaaS
             platforms, managed via a single app with no hardware required.
           </p>
-          <button class="button" type="button">Button</button>
+          <button class="button" type="button" data-button-open>Button</button>
         </div>
       </article>
     </div>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button class="modal__button" type="button" data-button-close>
+          <svg class="modal__icon">
+            <use href="./icons/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+        <div class="alert">
+          <h2 class="alert__title">Alert!</h2>
+          <p class="alert__text">
+            You have clicked <span class="alert__value">X times</span> to
+            related button.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/modal/index.js" defer type="module"></script>
   </body>
 </html>

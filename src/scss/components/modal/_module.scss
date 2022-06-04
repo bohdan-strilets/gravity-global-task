@@ -1,0 +1,49 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: getColor("backdrop-bg");
+
+  opacity: 1;
+  transition: opacity 250ms linear;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  width: 920px;
+  padding: 56px 95px;
+
+  background-color: getColor("main-bg");
+
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+}
+
+.modal__button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.modal__icon {
+  width: 24px;
+  height: 24px;
+  stroke: getColor("main-text");
+}
