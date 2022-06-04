@@ -22,24 +22,43 @@
   top: 50%;
   left: 50%;
 
-  width: 920px;
-  padding: 56px 95px;
+  width: 300px;
+  padding: 16px 25px;
 
   background-color: getColor("main-bg");
 
   transform: translate(-50%, -50%);
   overflow-y: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 640px;
+    padding: 36px 45px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 920px;
+    padding: 56px 95px;
+  }
 }
 
 .modal__button {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 20px;
+  right: 10px;
 
   background-color: transparent;
   border: none;
 
   cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    right: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 40px;
+    right: 40px;
+  }
 }
 
 .modal__icon {
