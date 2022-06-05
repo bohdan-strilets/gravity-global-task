@@ -57,6 +57,8 @@
           <img
             src="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg"
             alt="Sunset on the seashore"
+            width="505px"
+            height="330px"
           />
         </picture>
 
@@ -80,7 +82,7 @@
     </div>
 
     <div class="backdrop is-hidden" data-backdrop>
-      <div class="modal" role="dialog">
+      <div class="modal" role="dialog" aria-label="modal window">
         <button
           class="modal__button"
           type="button"
@@ -92,16 +94,27 @@
           </svg>
         </button>
 
-        <div class="alert">
+        <div>
           <h2 class="alert__title">Alert!</h2>
           <p class="alert__text">
             You have clicked
-            <span class="alert__value" aria-live="polite">X times</span> to
-            related button.
+            <span class="alert__value" data-value aria-live="polite"
+              >X times</span
+            >
+            to related button.
           </p>
+          <button
+            class="alert__button button is-hidden"
+            type="button"
+            data-button-reset
+            aria-label="reset click counter"
+          >
+            Reset
+          </button>
         </div>
       </div>
     </div>
-    <script src="./src/js/modal/index.js" defer type="module"></script>
+    <script src="./src/js/main.js" defer type="module"></script>
+    <script src="./src/js/modal.js" defer type="module"></script>
   </body>
 </html>

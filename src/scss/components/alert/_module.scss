@@ -1,6 +1,3 @@
-.alert {
-}
-
 .alert__title {
   font-weight: 700;
   font-size: 32px;
@@ -20,8 +17,19 @@
   line-height: 150%;
 
   color: getColor("main-text");
+  margin-bottom: 24px;
 }
 
 .alert__value {
   font-weight: 600;
+}
+
+.alert__button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &.is-hidden {
+    display: none;
+  }
 }
