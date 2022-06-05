@@ -20,7 +20,7 @@ const getLocalStarage = (name) => {
 };
 
 const renderMarkup = (value) => {
-  refs.value.textContent = value;
+  refs.value.textContent = `${value} times`;
 };
 
 getLocalStarage(LOCALSTORAGE_KEY);
